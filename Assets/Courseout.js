@@ -2,7 +2,7 @@
 
 function OnTriggerEnter ( col : Collider ) {
 
-	if ( col.tag == "Player" ) {
+	if ( GoalArea.goal == false && col.tag == "Player" ) {
 		Application.LoadLevel( Application.loadedLevel );
 	}
 
